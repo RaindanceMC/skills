@@ -62,8 +62,6 @@ public final class CraftSkills {
         var messages = services.messages();
         messages.defineFrom(CraftSkills.class.getResourceAsStream("/de/raindancer/modules/skills/messages-craft.yml"),
                 context.chat().brand()::chatPrefix);
-        messages.seriousFrom(CraftSkills.class.getResourceAsStream(
-                "/de/raindancer/modules/skills/messages-craft-serious.yml"));
         SkillValues values = new SkillValues(services);
         RandomGenerator random = new SplittableRandom();
         LongSupplier clock = System::currentTimeMillis;

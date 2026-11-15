@@ -89,7 +89,6 @@ public final class SkillsModule implements FlexModule {
 
         context.core().messages().defineFrom(SkillsModule.class.getResourceAsStream("messages.yml"),
                 context.chat().brand()::chatPrefix);
-        context.core().messages().seriousFrom(SkillsModule.class.getResourceAsStream("messages-serious.yml"));
 
         int registered = PermissionNodes.register(server);
         if (registered > 0) {

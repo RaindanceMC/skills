@@ -32,11 +32,6 @@ class CraftWordingTest implements WordingContract {
     }
 
     @Override
-    public Path seriousFile() {
-        return WORDING.resolveSibling("messages-craft-serious.yml");
-    }
-
-    @Override
     public int fewestWordingLines() {
         return 40;
     }
