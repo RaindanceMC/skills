@@ -1,8 +1,8 @@
 id: skills
 title: Skills
-summary: Skills with trees of their own — earn adventurer levels by playing, spend a point a level in any skill's tree.
+summary: Skills with trees of their own. Earn adventurer levels by playing and spend one point per level in any skill's tree.
 intro: |
-  Everything you do out there makes you better at something. {run:/skills} lists every skill; click one for its tree.
+  {run:/skills} lists every skill. Click one for its tree.
 icon: ENCHANTED_BOOK
 category: Progress & rewards
 order: 40
@@ -16,12 +16,12 @@ sections:
     title: The idea
     text: |
       You have one <white>adventurer level</white>, earned by playing. Every level is a <white>skill point</white>, up to <white>{setting:dnd:points-cap|number}</white>, and you spend them in any <white>skill's tree</white>: Defense, Melee, Archery, Agility, Magic and more, and Fishing too if this server has it. Every tree together costs far more than that, so you choose what you are good at.
-      {if:dnd:worlds}Skills only work in these worlds: <white>{setting:dnd:worlds}</white>. Elsewhere the trees give nothing and nothing earns experience — your hero is kept, not lost.{else}Skills work in every world.{/if}
+      {if:dnd:worlds}Skills only work in these worlds: <white>{setting:dnd:worlds}</white>. Elsewhere the trees give nothing and nothing earns experience. Your hero is kept.{else}Skills work in every world.{/if}
   - question: How do I gain levels?
     title: Experience
     text: |
-      By playing. Mining ore the world made (5 times its rarity: coal 5, diamond 40), digging stone, dirt and sand, chopping logs, harvesting grown crops, picking berries and flowers, fishing, breeding and taming animals, trading, crafting, smelting, cooking, brewing, building, anvil work, enchanting, finding a biome for the first time, walking the land, defeating monsters, and most of all raids (1,000) and bosses (1,000 to 5,000). Never a block somebody placed, never a spawner's monsters, nothing while you are away — and what a farm or a generator could do without end counts only up to about a minute of real work each minute. {if:dnd:xp-percent != 100}This server awards <white>{setting:dnd:xp-percent|percent}</white> of all that.{/if}
-      Level 2 needs 300, level 5 6,500, level 20 355,000; every level after that 25,000 more, up to 100.
+      By playing. Mining ore the world made (5 times its rarity: coal 5, diamond 40), digging stone, dirt and sand, chopping logs, harvesting grown crops, picking berries and flowers, fishing, breeding and taming animals, trading, crafting, smelting, cooking, brewing, building, anvil work, enchanting, finding a biome for the first time, walking the land, defeating monsters, and most of all raids (1,000) and bosses (1,000 to 5,000). Experience never comes from a block somebody placed, a spawner's monsters or time spent away. What a farm or a generator could do without end counts only up to about a minute of real work each minute. {if:dnd:xp-percent != 100}This server awards <white>{setting:dnd:xp-percent|percent}</white> of all that.{/if}
+      Level 2 needs 300, level 5 6,500, level 20 355,000; every level after that needs 25,000 more, up to level 100.
   - question: I had an adventurer. What changed?
     title: From before the skills
     text: |
@@ -29,4 +29,4 @@ sections:
   - question: Is my hero saved?
     title: Keeping your hero
     text: |
-      Your hero is saved on the server (and shared across the network), every few seconds and when you leave. If it cannot be read, nothing about it can change until staff fix that — it never overwrites newer progress with older.
+      Your hero is saved on the server (and shared across the network), every few seconds and when you leave. If it cannot be read, nothing about it can change until staff fix that. Newer progress is never overwritten with older.

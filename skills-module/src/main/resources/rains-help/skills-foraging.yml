@@ -1,8 +1,8 @@
 id: skills-foraging
 title: Foraging
-summary: The Foraging skill — more berries and honey, flowers and mushrooms twice, rare finds and bone meal that goes further.
+summary: More berries and honey, flowers and mushrooms twice, rare finds and bone meal that goes further.
 intro: |
-  Whatever grows wild is yours to gather. {run:/skills foraging} shows the tree.
+  {run:/skills foraging} shows the tree.
 icon: SWEET_BERRIES
 category: Progress & rewards
 order: 49
@@ -23,4 +23,4 @@ sections:
   - question: Why did a flower not drop twice?
     title: What counts
     text: |
-      Only what the world grew counts: never a flower or mushroom somebody placed, and never one bone meal made in the last half hour — bone meal on grass makes flowers, and those would otherwise turn back into more bone meal than they took.
+      Only what the world grew counts: never a flower or mushroom somebody placed, and never one bone meal made in the last half hour. Bone meal on grass makes flowers, and those would otherwise turn back into more bone meal than they took.

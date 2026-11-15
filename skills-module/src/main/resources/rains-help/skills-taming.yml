@@ -1,8 +1,8 @@
 id: skills-taming
 title: Taming
-summary: The Taming skill — wolves and cats that bite harder and live longer, quicker taming, horses that run, leap and never fall.
+summary: Wolves and cats that bite harder and live longer, quicker taming, horses that run faster, jump higher and never take fall damage.
 intro: |
-  Your animals, at their best. {run:/skills taming} shows the tree.
+  {run:/skills taming} shows the tree.
 icon: LEAD
 category: Progress & rewards
 order: 52
@@ -15,7 +15,7 @@ sections:
   - question: What does the Pack give?
     title: Pack
     text: |
-      An animal you feed what tames it — a bone, a fish, seeds — may trust you at the first try. Your wolves and cats bite harder; your wolves, cats and parrots near you have more hearts, take less damage and heal every five seconds. The choice is Alpha (harder bites) or Guardian (less damage), the capstone Packleader, the mastery badge <gold>Loyal to the End</gold>: a pet of yours that would die keeps a heart and runs to you, once every five minutes.
+      An animal you feed what tames it (a bone, a fish, seeds) may trust you on the first try. Your wolves and cats bite harder; your wolves, cats and parrots near you have more hearts, take less damage and heal every five seconds. The choice is Alpha (harder bites) or Guardian (less damage), the capstone Packleader, the mastery badge <gold>Loyal to the End</gold>: a pet of yours that would die keeps a heart and runs to you, once every five minutes.
   - question: What does the Stable give?
     title: Stable
     text: |

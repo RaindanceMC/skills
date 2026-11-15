@@ -1,8 +1,8 @@
 id: skills-cooking
 title: Cooking
-summary: The Cooking skill — furnaces that hurry, fuel that lasts, extra servings, meals that fill more and bless you.
+summary: Faster furnaces, fuel that lasts, extra servings, meals that fill more and give you a blessing.
 intro: |
-  From the hearth to the table. {run:/skills cooking} shows the tree.
+  {run:/skills cooking} shows the tree.
 icon: CAMPFIRE
 category: Progress & rewards
 order: 50
@@ -19,4 +19,4 @@ sections:
   - question: What does the Table give?
     title: Table
     text: |
-      Food fills you more — hunger and saturation — and a cooked meal blesses you for a while: meat with resistance, fish with water breathing, bread and baked potatoes with haste, stews with regeneration, pies and cookies with speed. The choice is <white>Iron Stomach</white> (rotten flesh, raw chicken, spider eyes and pufferfish do not make you sick) or Gourmet (longer blessings), the capstone Host, the mastery badge <gold>Feast</gold>: a meal you eat feeds the players within eight blocks too, half as much.
+      Food fills you more (hunger and saturation) and a cooked meal blesses you for a while: meat with resistance, fish with water breathing, bread and baked potatoes with haste, stews with regeneration, pies and cookies with speed. The choice is <white>Iron Stomach</white> (rotten flesh, raw chicken, spider eyes and pufferfish do not make you sick) or Gourmet (longer blessings), the capstone Host, the mastery badge <gold>Feast</gold>: a meal you eat feeds the players within eight blocks too, half as much.

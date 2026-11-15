@@ -1,8 +1,8 @@
 id: skills-mining
 title: Mining
-summary: The Mining skill — a faster pickaxe, ores twice over, haste and night vision deep down, whole veins at once.
+summary: A faster pickaxe, ores twice over, haste and night vision deep down, whole veins at once.
 intro: |
-  Mining is a skill with a tree of its own: {run:/skills mining}. Points come from your adventurer level, as for every skill.
+  Mining has a tree of its own: {run:/skills mining}. Points come from your adventurer level, as for every skill.
 icon: IRON_PICKAXE
 category: Progress & rewards
 order: 50
@@ -27,8 +27,8 @@ sections:
   - question: How does Vein Miner work?
     title: Crouching with a pickaxe
     text: |
-      <white>Vein Miner</white>: crouch while you break an ore and the rest of its vein — deepslate or not, up to as many more ores as your tree says, no further than eight blocks — comes with it, each block a real break that wears the pickaxe. It stops before the pickaxe would break.
+      <white>Vein Miner</white>: crouch while you break an ore and the rest of its vein (deepslate or not, up to as many more ores as your tree says, no further than eight blocks) comes with it, each block a real break that wears the pickaxe. It stops before the pickaxe would break.
   - question: Can I farm it with placed ore?
     title: Only the world's ore
     text: |
-      No. Double drops, experience, haste and veins only come from ore the world made — never from ore somebody placed — and never with silk touch.
+      No. Double drops, experience, haste and veins only come from ore the world made, never from ore somebody placed, and never with silk touch.

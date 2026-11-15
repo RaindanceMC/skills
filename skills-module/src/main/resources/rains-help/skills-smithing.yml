@@ -1,8 +1,8 @@
 id: skills-smithing
 title: Smithing
-summary: The Smithing skill — cheaper anvil work that is never too expensive, salvage, sturdier armour and weapons, templates kept.
+summary: Cheaper anvil work that is never too expensive, salvage, sturdier armour and weapons, templates kept.
 intro: |
-  Smithing is a skill with a tree of its own: {run:/skills smithing}. Anvils, salvage and the smithing table.
+  Smithing has a tree of its own: {run:/skills smithing}. It covers anvils, salvage and the smithing table.
 icon: ANVIL
 category: Progress & rewards
 order: 53
@@ -15,11 +15,11 @@ sections:
   - question: What is in the Smithing tree?
     title: Three branches
     text: |
-      <white>Anvil Work</white>: anvil work for fewer levels, less prior work added to an item, repairs with materials that mend more; choose Thrifty or Restorer; capstone <white>Master Smith</white> — no anvil work ever costs more than 39 levels, so nothing is ever too expensive. <white>Salvager</white>: <white>Salvage</white>, armour and weapons that wear slower; choose Thorough or Field Repairs; capstone Breaker of Arms. <white>Forgemaster</white>: armour and weapons that wear slower, smithing templates that are not used up; choose Copyist or Hardened Plate; capstone Netherwright.
+      <white>Anvil Work</white>: anvil work for fewer levels, less prior work added to an item, repairs with materials that mend more; choose Thrifty or Restorer; capstone <white>Master Smith</white>: no anvil work ever costs more than 39 levels, so nothing is ever too expensive. <white>Salvager</white>: <white>Salvage</white>, armour and weapons that wear slower; choose Thorough or Field Repairs; capstone Breaker of Arms. <white>Forgemaster</white>: armour and weapons that wear slower, smithing templates that are not used up; choose Copyist or Hardened Plate; capstone Netherwright.
   - question: How does salvage work?
     title: Salvage
     text: |
-      Crouch and use an iron, gold, copper, diamond, netherite, chainmail or leather tool, weapon or piece of armour on an anvil. You are told what you would get back and asked first: up to your tree's share of the ingots or gems it took, less its wear — never more than went into it. Netherite gives its diamonds and some netherite scrap. Enchantments are lost; items another plugin made are never salvaged.
+      Crouch and use an iron, gold, copper, diamond, netherite, chainmail or leather tool, weapon or piece of armour on an anvil. You are told what you would get back and asked first: up to your tree's share of the ingots or gems it took, less its wear, and never more than went into it. Netherite gives its diamonds and some netherite scrap. Enchantments are lost; items another plugin made are never salvaged.
   - question: What do the mastery badges bring?
     title: Mastery
     text: |

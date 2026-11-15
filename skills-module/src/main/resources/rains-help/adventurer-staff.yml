@@ -1,8 +1,8 @@
 id: adventurer-staff
 title: Adventurers for Staff
-summary: Setting levels, granting experience, unlearning trees, resetting, handing out magic items.
+summary: Setting levels, granting experience, unlearning trees, resetting heroes and handing out magic items.
 intro: |
-  Playing god with other people's characters. The commands all name a player who must be online, and they work on one at a time.
+  Each command names one player, who must be online.
 icon: COMMAND_BLOCK
 category: Staff
 order: 45
@@ -15,7 +15,7 @@ sections:
   - question: What can I do to a player's hero?
     title: Admin commands
     text: |
-      {cmd:/skills admin level <player> <level>} sets their level (1-100). {cmd:/skills admin xp <player> <amount>} grants experience. {cmd:/skills admin unlearn <player>} unlearns their whole skill tree, whatever the wait. {cmd:/skills admin reset <player>} deletes their hero — they start again at level 1; ask first, it cannot be undone.
+      {cmd:/skills admin level <player> <level>} sets their level (1-100). {cmd:/skills admin xp <player> <amount>} grants experience. {cmd:/skills admin unlearn <player>} unlearns their whole skill tree, whatever the wait. {cmd:/skills admin reset <player>} deletes their hero. They start again at level 1. Ask first, because it cannot be undone.
   - question: How do I give magic items?
     title: Giving items
     text: |

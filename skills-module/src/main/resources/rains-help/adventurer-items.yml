@@ -1,8 +1,8 @@
 id: adventurer-items
 title: Magic Items
-summary: Potions, scrolls, wands, rings, boots, bags and plus-weapons — what they do and how to find them.
+summary: "Potions, scrolls, wands, rings, boots, bags and plus weapons: what they do and how to find them."
 intro: |
-  Loot! The kind that glows and has a rarity. Monsters drop it, staff hand it out, and it all works the same for everybody.
+  Items with a rarity. Monsters drop them and staff can hand them out. They work the same for everybody.
 icon: POTION
 category: Items & enchantments
 order: 44
@@ -14,8 +14,8 @@ sections:
   - question: Where do magic items come from?
     title: Loot
     text: |
-      From monsters you defeat, now and then — never from a spawner's, never while you are away, and at most four an hour. {if:dnd:loot-percent > 0}Tougher monsters drop more often (a creeper about one in twenty-one with the book's rate, bosses always) and better things; the server's drop rate is <white>{setting:dnd:loot-percent|percent}</white> of normal.{else}Drops are switched off on this server; staff can still hand items out.{/if}
-      Rarity runs Common, Uncommon, Rare, Very rare, Legendary, shown in the name's colour.
+      From monsters you defeat, now and then. Never from a spawner's monsters, never while you are away, and at most four an hour. {if:dnd:loot-percent > 0}Tougher monsters drop more often (a creeper about one in twenty-one with the book's rate, bosses always) and better things; the server's drop rate is <white>{setting:dnd:loot-percent|percent}</white> of normal.{else}Drops are switched off on this server; staff can still hand items out.{/if}
+      Rarity runs from Common, Uncommon, Rare and Very rare to Legendary, shown in the name's colour.
   - question: What do the potions do?
     title: Potions
     text: |
@@ -23,16 +23,16 @@ sections:
   - question: What is the Potion of Mach Fuck?
     title: Potion of Mach Fuck
     text: |
-      The one magic potion you <b>brew</b> instead of finding: put a <white>dragon head</white> into a brewing stand over any ordinary drinkable potion (a water bottle works too). Drink it with an elytra on: for {setting:dnd:mach.seconds|seconds} it keeps you flying — opening the elytra again whenever it folds, lifting you off the ground first — wherever you look at {setting:dnd:mach.blocks-per-second|number} blocks a second. Steer by looking.
+      The one magic potion you <b>brew</b> instead of finding: put a <white>dragon head</white> into a brewing stand over any ordinary drinkable potion (a water bottle works too). Drink it with an elytra on: for {setting:dnd:mach.seconds|seconds} it keeps you flying (the elytra reopens whenever it folds, after lifting you off the ground) at {setting:dnd:mach.blocks-per-second|number} blocks a second wherever you look. Steer by looking.
       Crashing into a wall or the ground does not hurt while it works and for five seconds after, so you can land. The land ahead cannot load that fast, so much of the trip is empty sky. It never drops from monsters.
   - question: How do spell scrolls work?
     title: Scrolls
     text: |
-      Hold one and right-click; anybody can read one. <white>Magic Missile</white> and <white>Lightning</white> strike what you look at, <white>Fireball</white> bursts where you look and sets everything around on fire, <white>Healing</white> heals you and every player near you, <white>Misty Step</white> steps you to where you look, <white>Shield</white> gives golden hearts and harder skin for a while. A scroll has a tier, 1 to 5 — its rarity, common to legendary — and the higher, the stronger. It crumbles once read; with nothing to aim at, you keep it. The Arcana branch makes scrolls stronger and sometimes keeps them.
+      Hold one and right-click; anybody can read one. <white>Magic Missile</white> and <white>Lightning</white> strike what you look at, <white>Fireball</white> bursts where you look and sets everything around on fire, <white>Healing</white> heals you and every player near you, <white>Misty Step</white> steps you to where you look, <white>Shield</white> gives golden hearts and harder skin for a while. A scroll has a tier from 1 to 5 (its rarity, common to legendary). The higher the tier, the stronger the scroll. It crumbles once read; with nothing to aim at, you keep it. The Arcana branch makes scrolls stronger and sometimes keeps them.
   - question: What is the Wand of Magic Missiles?
     title: Wand
     text: |
-      Seven charges of Magic Missile. Right-click to spend one; sneak and right-click to spend three for a stronger volley. It regains one charge every three minutes — faster with Wandwright and Archmage in the Arcana branch.
+      Seven charges of Magic Missile. Right-click to spend one; sneak and right-click to spend three for a stronger volley. It regains one charge every three minutes, faster with Wandwright and Archmage in the Arcana branch.
   - question: What do rings, amulets and boots do?
     title: Worn items
     text: |
@@ -44,7 +44,7 @@ sections:
   - question: What are plus weapons?
     title: Plus weapons
     text: |
-      A +1, +2 or +3 weapon adds that much damage to every blow, or every arrow if it is a bow. Swords and axes glow with pulsing runes for the rune pack.
+      A +1, +2 or +3 weapon adds that much damage to every blow, or every arrow if it is a bow. Swords and axes glow with pulsing runes if you use the rune pack.
   - question: Can I trade or share these?
     title: Trading
     text: |
