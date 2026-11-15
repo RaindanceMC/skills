@@ -6,33 +6,33 @@ dnd:
 
   usage: "<gray>/skills  ·  /skills <skill>  ·  every skill, or one skill's tree"
   only-a-player: "<red>Only somebody standing in the world can be an adventurer."
-  not-allowed: "<red>Adventuring is not for you on this server, it seems."
-  welcome: "<gold>Adventure awaits.</gold> <gray>Every level brings a skill point for any skill's tree. <white>/skills</white> to spend them."
+  not-allowed: "<red>Adventuring is not enabled for you on this server."
+  welcome: "<gray>Every adventurer level brings a skill point: <white>/skills</white>."
   xp-gained: "<green>+<xp> XP</green> <dark_gray>(<source>)"
   level-up-title: "<gold>Level <level>"
-  level-up-subtitle: "<yellow><points> skill point(s) to spend"
-  level-up: "<gold>Level <level>!</gold> <gray>You have <white><points></white> skill point(s) to spend. <white>/skills"
-  loot: "<gold>Loot!</gold> <gray>A <rarity> <white><item></white> falls from your foe."
+  level-up-subtitle: "<gray><points> skill point(s)"
+  level-up: "<green>Level <level> reached. <white><points></white> skill point(s) to spend."
+  loot: "<gold>Loot:</gold> <gray>A <rarity> <white><item></white> falls from your foe."
 
   item:
     scroll-kept: "<light_purple>The scroll of <white><scroll></white> holds together.</light_purple> <gray>You can read it again."
     nothing-there: "<red><scroll> needs something to aim at."
     healed: "<green>The potion mends you:</green> <gray>+<white><health></white> health."
-    heroism: "<gold>You feel heroic.</gold> <gray>Ten extra hit points and a minute of strength."
-    speed: "<aqua>The world slows around you.</aqua> <gray>A minute of haste."
-    mach: "<dark_purple>MACH FUCK.</dark_purple> <gray>For <white><seconds></white> seconds your elytra keeps you flying wherever you look at <white><speed></white> blocks a second. Walls and the ground forgive you."
+    heroism: "<gold>Heroism.</gold> <gray>Ten extra hit points and a minute of strength."
+    speed: "<aqua>Haste.</aqua> <gray>A minute of haste."
+    mach: "<gray>Mach potion: while gliding, <white><seconds></white> seconds at <white><speed></white> blocks a second where you look. No crash or fall damage."
     mach-left: "<dark_purple>Mach Fuck <white><seconds>s</white>"
-    mach-over: "<gray>The Potion of Mach Fuck wears off. Five seconds to land before the ground hurts again."
+    mach-over: "<gray>The Potion of Mach Fuck wears off. You have five seconds to land before fall damage applies again."
     scroll-read: "<gray>The scroll of <white><scroll></white> crumbles to dust."
     wand-empty: "<red>The wand fizzles: only <charges> charge(s) left. It recovers one every few minutes."
 
   admin:
     unlearnt: "<green><player>'s skill tree is unlearnt; every point is back."
-    unknown-scroll: "<red>A spell scroll needs what is written on it — magic_missile, fireball, lightning, healing, misty_step or shield; <value> is none of them."
+    unknown-scroll: "<red>A spell scroll needs one of: magic_missile, fireball, lightning, healing, misty_step, shield. <value> is none of them."
     not-allowed: "<red>Only staff can do that."
     usage: "<gray>/skills admin level|xp <player> <number>  ·  unlearn|reset <player>  ·  give <player> <item> [scroll] [tier]"
     not-online: "<red><player> is not online here."
-    one-at-a-time: "<red>One player at a time, please."
+    one-at-a-time: "<red>One player at a time."
     not-a-number: "<red><value> is not a number."
     no-hero: "<red><player>'s adventurer is not read yet."
     level-set: "<green><player> is level <level> now."
@@ -42,26 +42,26 @@ dnd:
     unknown-item: "<red>No magic item is called <value>."
     given: "<green><player> got a <item>."
 
-  still-reading: "<yellow>Your adventurer is still being read. Give it a second."
+  still-reading: "<yellow>Your adventurer is still being read. Try again in a second."
 
   tree:
     points-waiting: "<green>You have <white><points></white> skill point(s) to spend.</green> <gray><white>/skills"
     learnt: "<gold><node></gold> <gray>rank <white><rank></white> learnt."
     refused: "<red><node>: <reason>"
     unlearnt: "<yellow><skill> is unlearnt.</yellow> <gray>Every point spent in it is back to spend."
-    mastered: "<gold>★ <node></gold> <gray>— you have mastered a branch of <white><skill></white>."
+    mastered: "<gold>★ <node></gold> <gray>You have mastered a branch of <white><skill></white>."
     unlearnt-by-staff: "<yellow>Staff unlearnt your skill tree.</yellow> <gray>Every point is back to spend: <white>/skills"
 
   combat:
-    dodged: "<gray>Dodged!"
-    second-wind: "<green>Second Wind!</green> <gray>You catch your breath and fight on."
-    undying: "<gold>Undying!</gold> <gray>A blow that should have killed you leaves you standing."
-    smoke-bomb: "<dark_gray>Smoke Bomb!</dark_gray> <gray>You vanish in smoke — the foes have lost you."
+    dodged: "<gray>Dodged."
+    second-wind: "<green>Second Wind.</green> <gray>You regain health."
+    undying: "<gold>Undying.</gold> <gray>A blow that would have killed you leaves you at one heart."
+    smoke-bomb: "<dark_gray>Smoke Bomb.</dark_gray> <gray>You vanish in smoke and foes lose track of you."
 
 
   excavation:
-    treasure: "<gold>Treasure!</gold> <gray><white><amount>× <item></white> in the dirt."
-    suspicious: "<gray>Keen Eye: <white><count></white> suspicious block(s) within <white><radius></white> — look for the sparks."
+    treasure: "<gold>Treasure:</gold> <gray><white><amount>× <item></white> in the dirt."
+    suspicious: "<gray>Keen Eye: <white><count></white> suspicious block(s) within <white><radius></white>. Look for the sparks."
     nothing-suspicious: "<gray>Keen Eye: nothing suspicious within <white><radius></white> blocks."
 
   smithing:
@@ -69,12 +69,12 @@ dnd:
     salvage-gives: "<green>You get back <white><amount>× <item></white>."
     salvage-book: "<light_purple>Its <white><enchantment></white> is kept as a book."
     salvage-enchantments-lost: "<red>Its enchantments are lost."
-    salvaged: "<gold>Salvaged.</gold> <gray>The <white><item></white> is back in pieces."
+    salvaged: "<gold>Salvaged.</gold> <gray>The <white><item></white> is broken down."
     salvage-worn: "<red>That is too worn to give anything back."
-    salvage-refused: "<red>That is no ordinary item — it cannot be salvaged."
-    salvage-moved: "<red>The item is no longer in your hand; nothing was salvaged."
-    template-kept: "<gold>The template survives the work.</gold> <gray>It is back in your bag."
-    scrap-back: "<dark_red>Forgemaster:</dark_red> <gray>a netherite scrap comes back from the work."
+    salvage-refused: "<red>That is no ordinary item and cannot be salvaged."
+    salvage-moved: "<red>The item is no longer in your hand. Nothing was salvaged."
+    template-kept: "<gold>The template survives.</gold> <gray>It is back in your inventory."
+    scrap-back: "<dark_red>Forgemaster:</dark_red> <gray>a netherite scrap comes back."
 
   nature:
     rare-find: "<gold>A rare find:</gold> <white><item>"
