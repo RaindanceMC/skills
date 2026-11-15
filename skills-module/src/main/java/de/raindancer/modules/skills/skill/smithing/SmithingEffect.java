@@ -15,7 +15,7 @@ public enum SmithingEffect implements Effect {
             + "materials", 80),
     SMITH_GEAR_WEAR("%s%% chance armour and weapons are not worn", 50),
     SMITH_TEMPLATE("%s%% chance a smithing template is not used up", 50),
-    SMITH_NO_LIMIT("Master Smith: no anvil work ever costs more than 39 levels — never too expensive", 1, true),
+    SMITH_NO_LIMIT("Master Smith: no anvil work ever costs more than 39 levels, so never too expensive", 1, true),
     SMITH_ANVIL_SAVE("Anvils are never damaged by your work", 1, true),
     SMITH_SALVAGE_BOOK("Salvaging an enchanted item keeps its best enchantment as a book", 1, true),
     SMITH_NETHERITE_SCRAP("Forgemaster: an upgrade to netherite gives a netherite scrap back", 1, true);

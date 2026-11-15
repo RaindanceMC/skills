@@ -90,7 +90,7 @@ public final class SkillsMenu extends PaginatedMenu<SkillView> implements ISkill
                 "fishing, crafting, smelting, cooking, brewing,",
                 "building, trading, enchanting, taming, exploring,",
                 "travelling, bosses and raids. Each level is a skill",
-                "point for any tree, up to " + services.perks().cap() + " — you have "
+                "point for any tree, up to " + services.perks().cap() + ". You have "
                         + services.perks().points(hero) + ".");
     }
 

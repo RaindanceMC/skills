@@ -16,7 +16,7 @@ public enum ExcavationEffect implements Effect {
     DIG_BRUSH("%s%% chance a brushed find comes up twice", 50),
     DIG_BRUSH_WEAR("%s%% chance a brush is not worn", 60),
     DIG_EARTHMOVER("Earthmover: crouch to dig three by three of soft ground", 1, true),
-    DIG_RARE_TREASURE("Rare treasures — diamonds, emeralds, music discs — can be dug up too", 1, true),
+    DIG_RARE_TREASURE("Rare treasures (diamonds, emeralds, music discs) can be dug up too", 1, true),
     DIG_KEEN_EYE("Keen Eye: crouch with a brush to see suspicious sand and gravel within 8 blocks", 1, true);
 
     private final String text;

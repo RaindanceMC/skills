@@ -120,8 +120,8 @@ public final class SkillTreeMenu extends TreeMenu implements ISkillsScreen {
             case BARRED -> "<dark_red>";
         };
         List<String> lore = new ArrayList<>();
-        String kind = node.mastery() ? "Mastery — earned by finishing the branch"
-                : node.capstone() ? "Capstone" : node.choice() ? "Choice — shuts the other side" : null;
+        String kind = node.mastery() ? "Mastery: earned by finishing the branch"
+                : node.capstone() ? "Capstone" : node.choice() ? "Choice: shuts the other side" : null;
         if (kind != null) {
             lore.add("<gold>" + kind);
         }
@@ -269,7 +269,7 @@ public final class SkillTreeMenu extends TreeMenu implements ISkillsScreen {
                 "mastery badge, free once the rest of it is done.",
                 "",
                 "A skill point every adventurer level, up to the",
-                "most, for any skill's tree — choose what you are.",
+                "most, for any skill's tree.",
                 "Shift-click the middle button to unlearn this skill.");
     }
 

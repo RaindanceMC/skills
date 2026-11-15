@@ -9,7 +9,7 @@ branches:
   architect:
     title: Architect
     icon: map
-    blurb: Blueprints — save what you built, paste it again from your own blocks.
+    blurb: "Blueprints: save what you built and build it again from your own blocks."
 
 nodes:
   mortar: {branch: mason, at: [0, 1], title: Mortar and Trowel, icon: bricks, ranks: 3, level: 1, level-step: 2, effects: {block_refund: 3}}

@@ -9,7 +9,7 @@ branches:
   furnace:
     title: Furnace
     icon: blast_furnace
-    blurb: Faster furnaces, fuel that lasts, double smelts — and ores that come out smelted.
+    blurb: Faster furnaces, fuel that lasts, double smelts and ores that come out smelted.
 
 nodes:
   apprentice: {branch: workbench, at: [0, 1], title: Apprentice, icon: crafting_table, ranks: 3, level: 1, level-step: 2, effects: {craft_extra: 3}}

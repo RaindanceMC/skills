@@ -20,7 +20,7 @@ public record SkillsSettings(
 
         @In("dnd") @Title("Worlds where skills work")
         @Describe("World names, separated by commas. Empty means every world. Outside these the skill tree gives "
-                + "nothing and nothing earns experience — the hero is kept, not lost.")
+                + "nothing and nothing earns experience. The hero is kept.")
         @Key("worlds")
         List<String> worlds,
 
@@ -50,7 +50,7 @@ public record SkillsSettings(
         int unlearnHours,
 
         @In("dnd") @Title("Most skill points") @Range(min = 1, max = 10_000)
-        @Describe("A skill point comes with every adventurer level, up to this many — spent in any skill's tree, so a "
+        @Describe("A skill point comes with every adventurer level, up to this many, spent in any skill's tree, so a "
                 + "player chooses what to be good at. Every tree together costs far more; raise it for broader heroes.")
         @Key("points-cap")
         int pointsCap,

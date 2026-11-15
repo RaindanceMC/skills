@@ -17,16 +17,16 @@ public final class SkillCatalog {
 
     private static final List<Perk> FIGHTING = List.of(Perk.values());
 
-    public static final SkillDef DEFENSE = new SkillDef("defense", "Defense", Material.SHIELD, 10, "🛡",
-            "Hearts, armour, healing — and a body that will not die.", FIGHTING);
+    public static final SkillDef DEFENSE = new SkillDef("defense", "Defense", Material.SHIELD, 10, "♜",
+            "Hearts, armour, healing and a body that will not die.", FIGHTING);
     public static final SkillDef MELEE = new SkillDef("melee", "Melee", Material.IRON_SWORD, 11, "⚔",
             "Harder, faster blows; two blades at once, or one great one.", FIGHTING);
-    public static final SkillDef ARCHERY = new SkillDef("archery", "Archery", Material.BOW, 12, "🏹",
+    public static final SkillDef ARCHERY = new SkillDef("archery", "Archery", Material.BOW, 12, "➳",
             "Arrows that hit harder, fly further and come back.", FIGHTING);
     public static final SkillDef AGILITY = new SkillDef("agility", "Agility", Material.LEATHER_BOOTS, 13, "✦",
             "Quick feet, blows that miss you, knives in the back.", FIGHTING);
     public static final SkillDef MAGIC = new SkillDef("magic", "Magic", Material.ENCHANTED_BOOK, 14, "✧",
-            "Scrolls, wands and potions at their full strength — and more to find.", FIGHTING);
+            "Scrolls, wands and potions at their full strength, and more to find.", FIGHTING);
     public static final SkillDef FARMING = new SkillDef("farming", "Farming", Material.WHEAT, 24, "☘",
             "Fuller harvests, crops that plant and grow themselves, twins in the pasture.",
             List.of(FarmingEffect.values()));
@@ -49,7 +49,7 @@ public final class SkillCatalog {
     public static final SkillDef EXCAVATION = new SkillDef("excavation", "Excavation", Material.IRON_SHOVEL, 21, "⚱",
             "A faster shovel, treasures in the dirt and luck under the brush.",
             List.of(de.raindancer.modules.skills.skill.excavation.ExcavationEffect.values()));
-    public static final SkillDef WOODCUTTING = new SkillDef("woodcutting", "Woodcutting", Material.IRON_AXE, 22, "🪓",
+    public static final SkillDef WOODCUTTING = new SkillDef("woodcutting", "Woodcutting", Material.IRON_AXE, 22, "♣",
             "A faster axe, whole trees felled, saplings and apples from the leaves.",
             List.of(de.raindancer.modules.skills.skill.woodcutting.WoodcuttingEffect.values()));
     public static final SkillDef SMITHING = new SkillDef("smithing", "Smithing", Material.ANVIL, 23, "⚒",
@@ -59,7 +59,7 @@ public final class SkillCatalog {
             "Crafting and smelting: more from every craft, faster furnaces, ores that come out smelted.",
             List.of(de.raindancer.modules.skills.skill.artisan.ArtisanEffect.values()));
     public static final SkillDef BUILDING = new SkillDef("building", "Building", Material.BRICKS, 31, "⌂",
-            "Longer arms, blocks to spare — and blueprints, pasted from your own blocks.",
+            "Longer arms, blocks to spare, and blueprints built from your own blocks.",
             List.of(de.raindancer.modules.skills.skill.building.BuildingEffect.values()));
     public static final SkillDef TRADING = new SkillDef("trading", "Trading", Material.EMERALD, 32, "⚖",
             "Lower prices, extra emeralds, trades that come back sooner.",

@@ -10,7 +10,7 @@ branches:
   forester:
     title: Forester
     icon: oak_sapling
-    blurb: "Saplings, apples and sticks from the leaves — and new trees."
+    blurb: "Saplings, apples and sticks from the leaves, and new trees."
   feller:
     title: Feller
     icon: spruce_log

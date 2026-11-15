@@ -15,7 +15,7 @@ public enum ExplorationEffect implements AttributeEffect {
     ROAD_RUNNER("Roadrunner: 30% faster on paths, gravel, cobble and bricks", 1),
     EXPLORE_XP("%s%% more adventurer experience from a biome seen for the first time", 100),
     WIDE_MAPS("Maps you start show %s zoom level(s) further out", 4),
-    TREASURE_SENSE("Sneak and use a compass: it points to the nearest village, ruin, wreck or temple within %s chunks — once every five minutes", 100),
+    TREASURE_SENSE("Sneak and use a compass: it points to the nearest village, ruin, wreck or temple within %s chunks, once every five minutes", 100),
     STRUCTURE_LOOT("%s%% chance a structure's chest you open first holds one more of something", 60),
     COMPASS_READING("Compass Reading: with a compass or a map in hand you see where you are, which way you face and the biome", 1);
 
