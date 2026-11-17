@@ -20,7 +20,6 @@ import de.raindancer.modules.skills.rules.SkillRule;
 import de.raindancer.modules.skills.rules.ProgressionRule;
 import de.raindancer.modules.skills.model.SkillDef;
 import de.raindancer.modules.skills.screen.SkillTreeMenu;
-import de.raindancer.modules.skills.screen.SkillsMenu;
 import de.raindancer.modules.skills.service.SkillViews;
 import de.raindancer.modules.skills.service.BodyService;
 import de.raindancer.modules.skills.service.CombatService;
@@ -56,7 +55,7 @@ import java.util.random.RandomGenerator;
  */
 public final class SkillsModule implements FlexModule {
 
-    private static final ModuleInfo INFO = ModuleInfo.of("dnd", "Skills", "0.15.1")
+    private static final ModuleInfo INFO = ModuleInfo.of("dnd", "Skills", "0.16.0")
             .describedAs("Skills with trees of their own, levelled by playing, with mastery badges and magic items.")
             .by("Raindancer118");
 
@@ -237,7 +236,7 @@ public final class SkillsModule implements FlexModule {
                 services.messages().send(viewer, "dnd.still-reading");
                 return;
             }
-            new SkillsMenu(services, viewer, null).open();
+            new de.raindancer.modules.skills.screen.SkillsDialog(services, viewer).open();
         }
 
         @Override
@@ -246,7 +245,8 @@ public final class SkillsModule implements FlexModule {
                 services.messages().send(viewer, "dnd.still-reading");
                 return;
             }
-            new SkillTreeMenu(services, viewer, new SkillsMenu(services, viewer, null), skill).open();
+            new SkillTreeMenu(services, viewer, de.raindancer.modules.skills.screen.SkillsDialog.returning(services, viewer),
+                    skill).open();
         }
     }
 
