@@ -7,7 +7,6 @@ dnd:
   usage: "<gray>/skills  ·  /skills <skill>  ·  every skill, or one skill's tree"
   only-a-player: "<red>Only somebody standing in the world can be an adventurer."
   not-allowed: "<red>Adventuring is not enabled for you on this server."
-  welcome: "<gray>Every adventurer level brings a skill point: <white>/skills</white>."
   xp-gained: "<green>+<xp> XP</green> <dark_gray>(<source>)"
   level-up-title: "<gold>Level <level>"
   level-up-subtitle: "<gray><points> skill point(s)"

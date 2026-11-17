@@ -181,7 +181,6 @@ public final class HeroService implements ISkillsService {
             return Optional.of(before.hero());
         }
         changed.accept(player);
-        messages.send(player, "dnd.welcome");
         return Optional.of(fresh);
     }
 
