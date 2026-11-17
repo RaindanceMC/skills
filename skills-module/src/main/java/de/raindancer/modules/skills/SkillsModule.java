@@ -56,7 +56,7 @@ import java.util.random.RandomGenerator;
  */
 public final class SkillsModule implements FlexModule {
 
-    private static final ModuleInfo INFO = ModuleInfo.of("dnd", "Skills", "0.14.5")
+    private static final ModuleInfo INFO = ModuleInfo.of("dnd", "Skills", "0.15.0")
             .describedAs("Skills with trees of their own, levelled by playing, with mastery badges and magic items.")
             .by("Raindancer118");
 
@@ -108,7 +108,7 @@ public final class SkillsModule implements FlexModule {
 
         ProgressionRule progression = new ProgressionRule();
         SkillRule perks = new SkillRule(SkillCatalog.all(), () -> settings.current().pointsCap(),
-                () -> Duration.ofHours(Math.max(0, settings.current().unlearnHours())));
+                () -> Duration.ofHours(Math.max(0, settings.current().unlearnHours())), SkillsModule::spentElsewhere);
         MobRule mobs = new MobRule();
         ItemRule itemRule = new ItemRule();
 
@@ -192,6 +192,15 @@ public final class SkillsModule implements FlexModule {
             log.info("RainsCore is older than 2.10.0: no adventurer screens until it is updated.");
         }
 
+        // The shared point pool — Core 2.108.0; on an older Core other plugins cannot spend skill points.
+        try {
+            de.raindancer.core.ui.tree.SkillPoints.provide(context.plugin(),
+                    new de.raindancer.modules.skills.service.SkillPointPool(heroes::of, perks));
+            context.closeWith(de.raindancer.core.ui.tree.SkillPoints::withdraw);
+        } catch (LinkageError olderCore) {
+            log.info("RainsCore is older than 2.108.0: other plugins cannot spend skill points until it is updated.");
+        }
+
         SkillViews views = new SkillViews(heroes, perks, progression);
         views.register(context.plugin(), (viewer, parent, skill) -> new SkillTreeMenu(services, viewer, parent, skill)
                 .open());
@@ -208,6 +217,15 @@ public final class SkillsModule implements FlexModule {
 
         log.info("Skills are up: {} skills, {} nodes; heroes are kept in {}.", SkillCatalog.all().size(),
                 SkillCatalog.all().stream().mapToInt(skill -> skill.tree().nodes().size()).sum(), database.describe());
+    }
+
+    /** What other plugins have spent of the shared points; nothing on a Core that has no pool yet. */
+    private static int spentElsewhere(java.util.UUID player) {
+        try {
+            return de.raindancer.core.ui.tree.SkillPoints.spentElsewhere(player);
+        } catch (LinkageError olderCore) {
+            return 0;
+        }
     }
 
     /** Opening this module's screens, without the command knowing the menu classes. */

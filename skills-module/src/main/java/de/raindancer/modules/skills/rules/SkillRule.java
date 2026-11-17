@@ -16,7 +16,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.function.IntSupplier;
+import java.util.UUID;
 import java.util.function.Supplier;
+import java.util.function.ToIntFunction;
 
 /**
  * Skill points and the skills' trees: one point for every adventurer level up to the cap, spent in any skill's tree —
@@ -31,12 +33,20 @@ public final class SkillRule implements ISkillsRule {
     private final List<SkillDef> skills;
     private final IntSupplier cap;
     private final Supplier<Duration> unlearnEvery;
+    private final ToIntFunction<UUID> spentElsewhere;
 
     /** @param cap and {@code unlearnEvery} are asked each time, so a changed setting counts at once */
     public SkillRule(List<SkillDef> skills, IntSupplier cap, Supplier<Duration> unlearnEvery) {
+        this(skills, cap, unlearnEvery, player -> 0);
+    }
+
+    /** @param spentElsewhere what a player has spent of the same points in other plugins' unlocks */
+    public SkillRule(List<SkillDef> skills, IntSupplier cap, Supplier<Duration> unlearnEvery,
+                     ToIntFunction<UUID> spentElsewhere) {
         this.skills = List.copyOf(skills);
         this.cap = cap;
         this.unlearnEvery = unlearnEvery;
+        this.spentElsewhere = spentElsewhere;
     }
 
     public List<SkillDef> skills() {
@@ -52,6 +62,7 @@ public final class SkillRule implements ISkillsRule {
         return Math.min(hero.level(), cap());
     }
 
+    /** What is spent in skills' own trees; other plugins' share is {@link #spentElsewhere}. */
     public int spent(Hero hero) {
         int spent = 0;
         for (SkillDef skill : skills) {
@@ -64,8 +75,12 @@ public final class SkillRule implements ISkillsRule {
         return skill.tree().spent(hero.nodesOf(skill.id()));
     }
 
+    public int spentElsewhere(Hero hero) {
+        return Math.max(0, spentElsewhere.applyAsInt(hero.player()));
+    }
+
     public int left(Hero hero) {
-        return Math.max(0, points(hero) - spent(hero));
+        return Math.max(0, points(hero) - spent(hero) - spentElsewhere(hero));
     }
 
     public Optional<Refusal> refusal(Hero hero, SkillDef skill, String node) {

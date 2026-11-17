@@ -36,6 +36,22 @@ class SkillRuleTest {
     }
 
     @Test
+    @DisplayName("points other plugins have spent are gone from what is left, and refuse a node when none remain")
+    void otherSpenders() {
+        int[] elsewhere = {0};
+        SkillRule shared = new SkillRule(SkillCatalog.all(), () -> cap[0], () -> Duration.ofDays(1),
+                player -> elsewhere[0]);
+        Hero hero = hero(12, Map.of("defense:toughness", 2));
+        assertThat(shared.left(hero)).isEqualTo(10);
+        elsewhere[0] = 4;
+        assertThat(shared.left(hero)).isEqualTo(6);
+        assertThat(shared.spent(hero)).as("skills' own trees only").isEqualTo(2);
+        elsewhere[0] = 50;
+        assertThat(shared.left(hero)).isZero();
+        assertThat(shared.refusal(hero(50, Map.of()), SkillCatalog.MELEE, "brawler")).contains(SkillRule.Refusal.NO_POINTS);
+    }
+
+    @Test
     @DisplayName("refusals per skill: unknown, needs, level, points, maxed, a choice's other side")
     void refusals() {
         assertThat(rule.refusal(hero(50, Map.of()), SkillCatalog.MELEE, "toughness")).as("not Melee's")
